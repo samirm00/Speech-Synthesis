@@ -6,39 +6,23 @@ A collection of user stories you can choose from. Stories inside of each priorit
 
 ## Initialize the web page 
 
-> As user I want to open `CSS-Variables` web site to know more about variables in `CSS`.
+> As user I want to open `Speech-Synthesis` web site to know more and use `Speech-Synthesis`.
 
-- When I open the web site `CSS-Variables` , I see a picture with brown bold border , the title of the page `Update CSS Variables with JS`and `JS` has the same color as the picture border.
+- When I open the web site `Speech-Synthesis`, I see 
 
-- I see also, the word `Spacing` with a scroll button beside it. 
-- I see also, the word `Blur` with a scroll button beside it.
-- I see also, the word `Base Color` with a rectangle beside it.
+- A yellow background page.
 
+- An input rectangle with white background.
 
-## Spacing 
+## speech to text 
 
-> As user I want to scroll the button beside `Spacing` to see what it does. 
+> As I user I want my convert my voice to a text
 
-- When I scroll the button , I see the picture border with increasing. 
+- When I start to speak in English  , I see what ever I said convert to a text.
 
-- I can modify the picture border with when i scroll to th right and to the left using my mouse. 
-
-## Blur
-
-> As user I want to scroll the button beside `Blur` to see what it does. 
-
-- When I scroll the button , I see the picture blur increases .
-
-- I can modify the picture blur with when i scroll to th right and to the left using my mouse. 
+- the speech recognition is working only with english , maybe because english is the default language for my system 
 
 
-## Base Color
-
-> As user I want click on the rectangle beside `Base Color` , I want to know what it does. 
-
-- When I click on the rectangle a color picker pumped up  up and i can choose the color I want  .
-
-- When I choose the color and click out side of the color picker , the border of the color and the word 'JS' change to the color I picked. 
 
 
 
