@@ -1,4 +1,4 @@
-# CSS-Variables 
+# Speech-Synthesis
 
 > A simple website allows the user to change the border with of a picture also the user is able to change the blurriness of the picture and change the color of the border and some text in the page title 
 
