@@ -1,6 +1,6 @@
-# CSS variables 
+# Speech-Synthesis
 
-A simple web site allows the user to change the border width of an image in the web site , it also allows the user to change the blurriness , the color of the border and some text on the page title. 
+A simple web site allows the user to enter something and then the input will convert to voice , it allows the user to select different accents , change the voice speed rate and the pitch (voice deepness).
 
 ---
 
@@ -19,18 +19,32 @@ A simple web site allows the user to change the border width of an image in the 
 ## 0.Setup
 
 - fork the `javaScript-30-starter` template 
-- use the template to create a new repo `jCSS-VAriables`
-- create a project board `CSS-Variables-project-board`
+- use the template to create a new repo `Speech-Synthesis`
+- create a project board `Speech-Synthesis-project-board`
 - create milestones and issues.
+
 ---
 
 ## X. Initialize the web page 
 
 > how much work do you think this step will take?  medium
 
-***As user I want to open `CSS-Variables` web site to know more about variables in `CSS`.**
+> **As user I want to open `Speech-Synthesis` web site to know more and use `Speech-Synthesis`.**
 
-- When I open the web site `CSS-Variables` , I see a picture with brown bold border , the title of the page `Update CSS Variables with JS`and `JS` has the same color as the picture border
+- When I open the web site `Speech-Synthesis`, I see 
+
+- A green blueish background.
+
+- A box in the cerner of the page with bacl title`The Voiceinator 500`
+with yellow background.
+- A select with arrow and `grey background 
+
+- A word `Rate` with scroll button under it. 
+- A word `Pitch` with scroll button under it. 
+- A text area says `Hello! I love JavaScript 👍` with backround like `select arrow`
+
+- A button `Speak` with yellow background like `title`
+- A button `Stop` with yellow background like `title`
 ...
 
 ### REPO
@@ -40,86 +54,161 @@ A simple web site allows the user to change the border width of an image in the 
 
 ### Concern A
 
-- `html`: create DOM elements `h2`,`div` parent , 3 `label` and 3 `input` as children 
+- `index.html`
 
 ### Concern B
 
-- `main.css`: add style to the page `background`,`font size & family` , margin to `div` parent and `width` to `input`.
+- `main.css`
 
-## X. Spacing 
+## X. Select the accent 
 
 > how much work do you think this step will take?  medium
 
-**As user I want to scroll the button beside `Spacing` to see what it does.** 
+> **As I user I want what are the options in `select`**
 
-- When I scroll the button , I see the picture border with increasing. 
+ When I click on select arrow i see three options 
 
-- I can modify the picture border with when i scroll to th right and to the left using my mouse. 
+ - Google US English  (en-US)
+
+ - Google UK English Female (en-GB)
+
+ - Google UK English Male (en-GB)
 ...
 
 ### REPO
 
-- This user story is developed on branch `2-spacing`.
+- This user story is developed on branch `2-select`.
 - This branch is merged to `master` branch after the acceptance criteria have been checked off.
 
 ### Concern A
 
-- `main.css`: create root element and add spacing variable`spacing` to the `root` element and to `img`
+
 
 ### Concern B
 
-- `handleUpdate.js`  add `handleUpdate()` function to change the value of the `spacing` when `change` or `mouseMovement` happened. 
+
 
 ### Concern C
 
-- `inputChange.js` file to add event which will call the function `handleUpdate()` when `change` happened 
-
-
-### Concern D
-
-- `inputChange.js` file to add event which will call the function `handleUpdate()` when `mouseMove`happened 
-
-## X. Blur
+## X. Voice rate 
 
 > how much work do you think this step will take?  medium
 
-**As user I want to scroll the button beside blur to see what it does.** 
 
-As user I want to scroll the button beside `Blur` to see what it does. 
+> **As I user I want to know what is `Rate` doing**
 
-- When I scroll the button , I see the picture blur increases .
-
-- I can modify the picture blur with when i scroll to th right and to the left using my mouse. 
- 
-...
-
-### REPO
-
-- This user story is developed on branch `3-blur`.
-- This branch is merged to `master` branch after the acceptance criteria have been checked off.
-
-### Concern A
-
-- `main.css`: create root element and add spacing variable`blur` to the `root` element and to `img`
-
-
-## X. Base Color
-
-> how much work do you think this step will take?  medium
-
-**As user I want click on the rectangle beside `Base Color` , I want to know what it does.** 
-
-- When I click on the rectangle a color picker pumped up  up and i can choose the color I want  .
-
-- When I choose the color and click out side of the color picker , the border of the color and the word 'JS' change to the color I picked. 
+when I scroll the `Rate button` the sound velocity increases ( speak faster)
 
 ...
 
 ### REPO
 
-- This user story is developed on branch `4-base`.
+- This user story is developed on branch `3-rate`.
 - This branch is merged to `master` branch after the acceptance criteria have been checked off.
 
 ### Concern A
 
-- `main.css`: create root element and add spacing variable`base` to the `root` element , to `img` and `h1` element.
+
+### Concern B
+
+
+### Concern C
+
+## X. Voice Pitch
+
+> how much work do you think this step will take?  medium
+
+> **As I user I want to know what is `Pitch` doing**
+
+when I scroll the `Pitch` the sound deepness  decreases  ( the voice become thiner )
+
+...
+
+### REPO
+
+- This user story is developed on branch `4-pitch`.
+- This branch is merged to `master` branch after the acceptance criteria have been checked off.
+
+### Concern A
+
+
+### Concern B
+
+
+
+### Concern C
+
+## X. Text area
+
+> **As I user I want to know if I can add text to  `textarea`**
+
+when I click on the `textarea` 
+
+- I can type the text I want and I can hear the text I typed
+
+...
+
+### REPO
+
+- This user story is developed on branch `5-textarea`.
+- This branch is merged to `master` branch after the acceptance criteria have been checked off.
+
+### Concern A
+
+
+### Concern B
+
+
+
+### Concern C
+
+
+## X. Play
+
+> **As I user I want to know what is `Play` button doing**
+
+when I click on  `Play` button 
+
+- My text convert  to a voice 
+
+...
+
+### REPO
+
+- This user story is developed on branch `6-play`.
+- This branch is merged to `master` branch after the acceptance criteria have been checked off.
+
+### Concern A
+
+
+
+### Concern B
+
+
+
+### Concern C
+
+
+## X. Stop
+
+
+> **As I user I want to know what is `Stop` button doing**
+
+when I click on  `Stop` button 
+
+- The voice stops 
+...
+
+### REPO
+
+
+
+### Concern A
+
+- 
+
+### Concern B
+
+- 
+
+### Concern C
