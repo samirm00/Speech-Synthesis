@@ -1,6 +1,6 @@
 # Speech-Synthesis
 
-> A simple website allows the user to change the border with of a picture also the user is able to change the blurriness of the picture and change the color of the border and some text in the page title 
+> A simple web site allows the user to enter something and then the input will convert to voice , it allows the user to select different accents , change the voice speed rate and the pitch (voice deepness).
 
 ## Table of contents
 * [General info](#general-info)
@@ -27,7 +27,7 @@ The web site is created by `Wes Bos`, his code is written in a single `HTML` fil
 
 
 ## Setup
-open index.html in your browser and enjoy! playing the drum 
+open index.html in your browser and type what ever you want and enjoy listing to what you typed
 
 ## Code Examples
 
