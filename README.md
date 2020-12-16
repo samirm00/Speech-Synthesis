@@ -1,6 +1,6 @@
 # Speech-Synthesis
 
-> A simple web site allows the user to enter something and then the input will convert to voice , it allows the user to select different accents , change the voice speed rate and the pitch (voice deepness).
+> A simple web site allows the user to enter something and then the input will convert to voice , it allows the user to select different accents , change the voice speed rate and the pitch (highness or lowness of the voice).
 
 ## Table of contents
 * [General info](#general-info)
