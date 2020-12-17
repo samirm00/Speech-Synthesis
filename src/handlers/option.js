@@ -1,5 +1,5 @@
 'use strict';
-
+import {  toggle } from '../handlers/toggle.js';
 
 /**
  * 
