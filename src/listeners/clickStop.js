@@ -1,9 +1,11 @@
 'use strict';
 
-import { } from '../handlers/populate.js';
+import {toggle } from '../handlers/toggle.js';
 
 /**
  * 
  */
   
+const stopButton = document.querySelector('#stop');
 
+stopButton.addEventListener('click', () => toggle(false));
