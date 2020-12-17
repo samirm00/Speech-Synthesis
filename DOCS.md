@@ -7,10 +7,16 @@
 <!-- BEGIN TOC -->
 
 - [handlers](#handlers)
-  - [handleUpdate.js](#srchandlershandleUpdatejs)
+  - [option.js](#srchandlersoptionjs)
+  - [populate.js](#srchandlerspopulatejs)
+  - [setVoice.js](#srchandlerssetVoicejs)
+  - [toggle.js](#srchandlerstogglejs)
 - [listeners](#listeners)
-  - [inputChange.js](#srclistenersinputChangejs)
-  - [inputMousemove.js](#srclistenersinputMousemovejs)
+  - [change.js](#srclistenerschangejs)
+  - [changeOption.js](#srclistenerschangeOptionjs)
+  - [clickStart.js](#srclistenersclickStartjs)
+  - [clickStop.js](#srclistenersclickStopjs)
+  - [voiceChanged.js](#srclistenersvoiceChangedjs)
 - [init.js](#srcinitjs)
 
 <!-- END TOC -->
@@ -31,17 +37,31 @@ Handler function define user interactions. They will:
 
 ---
 
-### [./src/handlers/handleUpdate.js](./src/handlers/handleUpdate.js?study)
+### [./src/handlers/option.js](./src/handlers/option.js?study)
 
-<a name="artifyHandler"></a>
+<a name="msg"></a>
 
-## handleUpdate
+## msg
 
-creates a mirror-image rendering of the user input and displays the growing artwork
+---
 
-| Param | Type               | Description                                                |
-| ----- | ------------------ | ---------------------------------------------------------- |
-| event | <code>change</code> | triggered whenever a user scroll the button or click      |
+### [./src/handlers/populate.js](./src/handlers/populate.js?study)
+
+<a name="voices"></a>
+
+## voices
+
+---
+
+### [./src/handlers/setVoice.js](./src/handlers/setVoice.js?study)
+
+<a name="msg"></a>
+
+## msg
+
+---
+
+### [./src/handlers/toggle.js](./src/handlers/toggle.js?study)
 
 [TOP](#DOCS)
 
@@ -57,25 +77,35 @@ You can use the same handler in many different listeners, or add more than one l
 
 ---
 
-### [./src/listeners/inputChange.js](./src/listeners/inputChange.js?study)
+### [./src/listeners/change.js](./src/listeners/change.js?study)
 
-<a name="change value
-calls handler that changes the value "></a>
+<a name="voicesDropdown"></a>
 
-## change value
-
-calls handler that changes the spacing or blur or color
+## voicesDropdown
 
 ---
 
-### [./src/listeners/inputMousemove.js](./src/listeners/inputMousemove.js?study)
+### [./src/listeners/changeOption.js](./src/listeners/changeOption.js?study)
 
-<a name="scroll by mouse
-calls the function handleUpdate when the mouse is moved"></a>
+<a name="options"></a>
 
-## mouse movement
+## options
 
-calls the function handleUpdate when the mouse is moved
+---
+
+### [./src/listeners/clickStart.js](./src/listeners/clickStart.js?study)
+
+---
+
+### [./src/listeners/clickStop.js](./src/listeners/clickStop.js?study)
+
+---
+
+### [./src/listeners/voiceChanged.js](./src/listeners/voiceChanged.js?study)
+
+<a name="msg"></a>
+
+## msg
 
 [TOP](#DOCS)
 
