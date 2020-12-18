@@ -33,6 +33,18 @@ open index.html in your browser and type what ever you want and enjoy listing to
 
 ```js
 
+import { toggle}  from './toggle.js'
+
+const msg = new SpeechSynthesisUtterance();
+
+
+
+ export function setOption() {
+    console.log(this.name, this.value);
+    msg[this.name] = this.value;
+    toggle();
+  }
+
 ```
 
 
@@ -55,4 +67,4 @@ Project is: _in progress_
 The project is created by `Wes Bos`
 
 ## Contact
-Refracted  by [@samirm00] 
+Refracted  by [@group2] 
