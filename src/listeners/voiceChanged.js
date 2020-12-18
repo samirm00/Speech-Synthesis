@@ -1,11 +1,10 @@
-'use strict';
-
-import {populateVoices  } from '../handlers/populate.js';
-
 /**
- * 
+ * Listener , call the function populateVoices()
  */
-  
-const msg = new SpeechSynthesisUtterance();
+
+
+
+
+import {populateVoices} from '../handlers/populateVoice.js';
 
 speechSynthesis.addEventListener('voiceschanged', populateVoices);
