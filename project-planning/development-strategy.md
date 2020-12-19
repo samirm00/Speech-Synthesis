@@ -12,7 +12,7 @@ A simple web site allows the user to enter something and then the input will con
 
 ## WIREFRAME
 
-[figma](https://www.figma.com/file/owY0cg1h7wvCDMOsYIEtBE/CSS-Variables?node-id=2%3A2)
+[figma](https://www.figma.com/file/hwFTV0V7lMYXf6zFiM1r9r/Speech-Synthesis?node-id=0%3A1)
 
 ---
 
@@ -54,11 +54,27 @@ with yellow background.
 
 ### Concern A
 
-- `index.html`
+- `index.html`   
+
+    * add a `div` element with class  'voiceinator' to the `body`
+    *  add  `h1` element as a child 
+    *  add  `select ` element with id 'voices as a child  
+    *   add  `option` element as a grand child 
+    *   add  2 `label` element as a child 
+    *   add 2  `input` element as a child 
+    *   add  `textarea` element as a child 
+    *  add  2`button` element as a child one with id 'stop' and the other with id 'speak'
 
 ### Concern B
 
-- `main.css`
+- `main.css`:
+
+   * `html` add general style font size and box sizing  
+   * `body` add general style  margin , padding , font family , display,background color and size
+   *  add style to the parent `div`
+   * add style to `h1` margin,padding,background,font size,family, background and text shadow
+   * add style to `textarea`  height 
+   * add style to `button`  background,border,font family and size , cursor and position
 
 ## X. Select the accent 
 
@@ -82,13 +98,23 @@ with yellow background.
 
 ### Concern A
 
+-  ` populate.js` :
 
+   *  create a file `populate.js` and a function `populateVoices()`
+   *  declare an array `voices` and assign it to an empty array 
+   *  select `select` DOM emennt using `querySelector`
+   *  make the` voices` as a current target 
+   *  add it using `innerHTML`
+   *  filter ` voices` to include English only 
+   *  map the `voices` to include voice name and language then join them
+   *  export the function `populateVoices()`
 
 ### Concern B
 
+- `voicesChanged.js` :
 
+  * add event listener to when 'voiceschanged' call the function `populateVoices()`
 
-### Concern C
 
 ## X. Voice rate 
 
@@ -108,11 +134,18 @@ when I scroll the `Rate button` the sound velocity increases ( speak faster)
 
 ### Concern A
 
+- `setVoice.js` :
 
+    *  developed on branch `3-rate` 
+    *  create a file `setVoice.js`
+    *  add function `setVoice()`
+    *  for the voice find the name and assign it to the current targent value 
+    *  export the function `setVoice()`
 ### Concern B
 
-
-### Concern C
+- `change.js`
+   
+    *  add event listener to when 'change' call the function `setVoice()`
 
 ## X. Voice Pitch
 
@@ -131,12 +164,20 @@ when I scroll the `Pitch` the sound deepness  decreases  ( the voice become thin
 
 ### Concern A
 
+- `option.js` :
 
+    * create a file  `option.js`
+    * add function `setOption()
+    *  set the message name to the current value 
+    * call the `toggle()`
+    * export the function ``setOption()
 ### Concern B
 
+-  `changeOptions.js`
 
 
-### Concern C
+    * add event listener to when 'change' call the function `setOption()`
+
 
 ## X. Text area
 
@@ -150,17 +191,8 @@ when I click on the `textarea`
 
 ### REPO
 
-- This user story is developed on branch `5-textarea`.
+- This user story is developed on branch `master`.
 - This branch is merged to `master` branch after the acceptance criteria have been checked off.
-
-### Concern A
-
-
-### Concern B
-
-
-
-### Concern C
 
 
 ## X. Play
@@ -175,18 +207,14 @@ when I click on  `Play` button
 
 ### REPO
 
-- This user story is developed on branch `6-play`.
+- This user story is developed on branch `5-play`.
 - This branch is merged to `master` branch after the acceptance criteria have been checked off.
 
 ### Concern A
 
+- `clickStart.js`
 
-
-### Concern B
-
-
-
-### Concern C
+     * add event listener to when 'click' call the function ` toggle()`
 
 
 ## X. Stop
@@ -201,14 +229,13 @@ when I click on  `Stop` button
 
 ### REPO
 
+- This user story is developed on branch `6-stop`.
+- This branch is merged to `master` branch after the acceptance criteria have been checked off.
+
 
 
 ### Concern A
 
-- 
+-  `clickStop.js`
 
-### Concern B
-
-- 
-
-### Concern C
+   * add event listener to when 'click' the stop button call the function ` toggle(false)`

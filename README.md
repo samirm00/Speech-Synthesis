@@ -1,6 +1,6 @@
 # Speech-Synthesis
 
-> A simple web site allows the user to enter something and then the input will convert to voice , it allows the user to select different accents , change the voice speed rate and the pitch (voice deepness).
+> A simple web site allows the user to enter something and then the input will convert to voice , it allows the user to select different accents , change the voice speed rate and the pitch (highness or lowness of the voice).
 
 ## Table of contents
 * [General info](#general-info)
@@ -32,17 +32,19 @@ open index.html in your browser and type what ever you want and enjoy listing to
 ## Code Examples
 
 ```js
-/**
- * changing the value of the variable , the first variable @spacing change the border width value , the second @blur change blur value and the last variable @base change the color of the @spacing and h1 DOM elements .
- * @param {Event} event - triggered whenever a user change the value using the scroll button 
- */
-         
-   
-    // set the style properties for each input using the name and value attributes and adding the suffix(px) 
-       
-    export function handleUpdate() {
-      const suffix = this.dataset.sizing || '';
-      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+
+import { toggle}  from './toggle.js'
+
+const msg = new SpeechSynthesisUtterance();
+
+
+
+ export function setOption() {
+    console.log(this.name, this.value);
+    msg[this.name] = this.value;
+    toggle();
+  }
+
 ```
 
 
@@ -65,4 +67,4 @@ Project is: _in progress_
 The project is created by `Wes Bos`
 
 ## Contact
-Refracted  by [@samirm00] 
+Refracted  by [@group2] 

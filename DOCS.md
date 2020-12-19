@@ -60,8 +60,14 @@ Handler function define user interactions. They will:
 ## msg
 
 ---
+ 4-pitch
+
 
 ### [./src/handlers/toggle.js](./src/handlers/toggle.js?study)
+
+<a name="msg"></a>
+
+## msg
 
 [TOP](#DOCS)
 
@@ -86,6 +92,7 @@ You can use the same handler in many different listeners, or add more than one l
 ---
 
 ### [./src/listeners/changeOption.js](./src/listeners/changeOption.js?study)
+ 4-pitch
 
 <a name="options"></a>
 
@@ -95,7 +102,13 @@ You can use the same handler in many different listeners, or add more than one l
 
 ### [./src/listeners/clickStart.js](./src/listeners/clickStart.js?study)
 
+
+<a name="options"></a>
+
+## options
+
 ---
+
 
 ### [./src/listeners/clickStop.js](./src/listeners/clickStop.js?study)
 
